@@ -12,104 +12,84 @@ body {
 html {
     height: 100%;
 }
-
-@keyframes gradient{
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
-.btn {
-    background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% );
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    margin-top: -10px;
-    cursor: pointer;
-    font-size: 15px;
+.fa {
     color: black;
-  }
-  
-  /* Darker background on mouse-over */
-  .btn:hover {
-    background: linear-gradient(-45deg, white, #DAE2F8);
-  }
+    width: 25px; /* Adjusted size */
+    height: 25px; /* Adjusted size */
+    margin-right: 8px; /* Space between icon and text */
+}
 
-  .fa {
-    color: black;
-    align-items: left;
-    float: left;
-    width: 50px;
-    height: 25px;
-  }
-
-  .fa:hover {
+.fa:hover {
     color: #DAE2F8;
-  }
+}
 
-  #fa-linkedin fa-1x {
-    color:#008CBA;
-  }
+#fa-linkedin.fa-1x {
+    color: #008CBA;
+}
 
 .navbar {
-    overflow: hidden;
-    opacity: 1;
-    position:sticky; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    transition: top 0.3s;
-  }
-  
-.navbar a {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 30px 30px;
+    text-align: left; /* Aligning navbar items */
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #e2e2e2; /* Border for navbar */
+}
+
+.navbar .links {
+    display: flex;
+    justify-content: flex-end; /* Aligning links to the right */
+    align-items: center;
+}
+
+.navbar .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Change to your preferred color */
+    color: white;
     text-decoration: none;
-    font-size: 20px;
-    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.navbar .btn i {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+.navbar .btn:hover {
+    background-color: #0056b3; /* Change to your preferred hover color */
 }
 
 .links a {
-    float: right;
-    display:block;
+    display: block;
     color: #000000;
     text-align: center;
-    padding: 30px 0px  ;
+    padding: 10px 15px;
     text-decoration: none;
     font-size: 15px;
-    margin-right: 50px;
-    margin-top: 15px;
+    margin: 0 10px; /* Space between links */
 }
-  
-  .navbar a:hover {
+
+.links a:hover {
     color: #008CBA;
-  }
+}
 
 .main {
     float: left;
     text-align: left;
     margin-left: 70px;
     margin-top: 30px;
-  }
+}
 
 h1 {
-    margin: 35px auto 0 auto ;
+    margin: 35px auto 0 auto;
     color: #000000;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
     line-height: 1.5;
-    font-weight:350;
-    font-style:normal;
+    font-weight: 350;
+    font-style: normal;
 }
 
 .details2 li {
@@ -119,7 +99,7 @@ h1 {
 
 .hellop {
     color: rgb(0, 0, 0);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     text-align: left;
     margin-left: 70px;
@@ -132,53 +112,31 @@ h1 {
 }
 
 .james-picture {
-  float: right;
-  max-width: 25%;
-  max-height:15%;
-  margin-right: 200px;
-  margin-top: -425px;
+    float: right;
+    max-width: 25%;
+    max-height: 15%;
+    margin-right: 200px;
+    margin-top: -425px;
+}
+
+h2, h3, h4, h5, h6, p {
+    margin: 0;
+    text-align: left;
 }
 
 h2 {
-    color: rgb(0, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;    
-    font-weight: lighter;
-    margin: 0;
-    font-weight: normal;
-    line-height: 1.5;
-    text-align: left;
+    font-size: 30px;
 }
 
 h3 {
-    color: #000000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    margin: 0;
-    font-weight: normal;
     font-weight: lighter;
-    line-height: 1.3;
-    text-align: left;
 }
 
 h4 {
-        color: #000000;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 18px;
-        margin: 0;
-        font-weight: normal;
-        font-weight: lighter;
-        line-height: 1.3;
-        text-align: left;
-        padding-bottom: 25px;
+    font-size: 18px;
+    padding-bottom: 25px;
 }
-
-hr {
-    display: block;
-    border-style: inset;
-    border-width: 1px;
-    float: left;
-  }
 
 h5 {
     background-color: #000000;
@@ -187,35 +145,29 @@ h5 {
     background-clip: content-box;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 15px;
     font-weight: bold;
-    margin: 0;
-    font-weight: normal;
     line-height: 2;
-    text-align: left;
 }
 
 h6 {
-    color: rgb(0, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;    
-    font-weight: lighter;
-    margin: 0;
-    font-weight: normal;
+    font-size: 30px;
     line-height: 1;
     text-align: right;
     margin-right: -700px;
 }
 
+hr {
+    display: block;
+    border-style: inset;
+    border-width: 1px;
+    float: left;
+}
 
 p {
-    color: rgb(0, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
-    text-align: left;
 }
 
 .content {
@@ -227,12 +179,9 @@ p {
 
 li {
     font-size: 19px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
     line-height: 1.5;
     margin-right: -170px;
-    padding-right: 0;
-    padding-left: 0;
     padding-bottom: 25px;
     color: rgb(0, 0, 0);
     font-weight: 300;

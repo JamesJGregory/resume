@@ -4,7 +4,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 200%;
     background: #e2e2e2;
-    background-size: 600% 600%; /* This line is causing the background to move */
 }
 
 html {
